@@ -3,7 +3,7 @@ class MobilePhone:
         self.manufacturer = manufacturer
         self.screen_size = screen_size
         self.num_cores = num_cores
-        self.status = True
+        self.status = False
         self.app = []
     
     def power_on(self):
