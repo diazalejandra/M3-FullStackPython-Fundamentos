@@ -1,4 +1,7 @@
+from datetime import datetime
 class Banco:
+    fecha = datetime.today().strftime('%Y-%m-%d')
+    
     def __init__(self):
         self.__cuentas = []
 
@@ -87,7 +90,7 @@ def imprimir_menu():
                     cuenta = int(input("Indique la cuenta: "))
                     movimiento = input("Indique el movimiento a realizar (abono o cargo): ")
                     monto = int(input("Ingrese el monto: "))
-                    banco1.agregar_movimiento(cuenta, movimiento, '29-04-2023', monto)
+                    banco1.agregar_movimiento(cuenta, movimiento, banco1.fecha, monto)
                 case 4:
                     cuenta = int(input("Ingrese el número de cuenta: "))
                     rut = input("Ingrese su rut: ")
