@@ -109,5 +109,6 @@ banco1.agregar_movimiento(12345, 'cargo', '28-04-2023', 10)
 banco1.consultar_por_cuenta(12345)
 #banco1.consultar_por_rut('1-9')
 
-imprimir_menu()
+#imprimir_menu()
+banco1.consultar_por_cuenta2(12345)
 
